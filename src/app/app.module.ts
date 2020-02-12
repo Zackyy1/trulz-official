@@ -7,6 +7,7 @@ import { DiscordComponent } from './discord/discord.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { RainComponent } from './rain/rain.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     DiscordComponent,
     HeaderComponent,
     MainComponent,
-    SidebarComponent
+    SidebarComponent,
+    RainComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
