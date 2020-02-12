@@ -22,7 +22,9 @@ git pull
 
 
 Create new components (if not working on an existing one)
-`ng g c componentName` or `ng generate component comonentName`
+`ng g c componentName`
+or 
+`ng generate component comonentName`
 
 
 
