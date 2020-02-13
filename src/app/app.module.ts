@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RainComponent } from './rain/rain.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MainSectionComponent } from './main-section/main-section.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MainComponent,
     SidebarComponent,
     RainComponent,
-    NavBarComponent
+    NavBarComponent,
+    MainSectionComponent
   ],
   imports: [
     BrowserModule,
