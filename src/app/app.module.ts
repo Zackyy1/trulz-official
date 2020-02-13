@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RainComponent } from './rain/rain.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RainComponent } from './rain/rain.component';
     HeaderComponent,
     MainComponent,
     SidebarComponent,
-    RainComponent
+    RainComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
