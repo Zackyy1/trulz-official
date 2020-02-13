@@ -22,7 +22,7 @@ export function Drop(p) {
     this.show = function() {
       var thick = p.map(this.z, 0, 20, 1, 3);
       p.strokeWeight(thick);
-      p.stroke(190, 190, 190);
+      p.stroke(120, 120, 120);
       p.line(this.x-100, this.y, this.x-100, this.y + this.len);
       
     };
