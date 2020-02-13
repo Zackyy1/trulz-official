@@ -1,13 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "./assets/fontawesome-free-5.12.1-web/less/fontawesome.less";
+
+@fa-font-path: './assets/fontawesome-free-5.12.1-web/webfonts';
+@import "./assets/fontawesome-free-5.12.1-web/less/fontawesome.less";
+@import "./assets/fontawesome-free-5.12.1-web/less/solid.less";
+@import "./assets/fontawesome-free-5.12.1-web/less/brands.less";
+
 
 @main: #ebebeb;
 @dark: #444444;
 @white: rgb(221, 221, 221);
 
 // @shadow:
-h1,h2,h3,h4,h5,h6,p,li {
+h1,h2,h3,h4,h5,h6,p,li,td,div {
     font-family: 'Roboto', sans-serif;
-
+    color: @white;
 }
 
 body, html {
@@ -17,9 +24,61 @@ body, html {
 
 }
 
+// -------- ICONS --------
+.user {
+    .fa-icon;
+    .fas;
+  
+    &:before {
+      content: @fa-var-user;
+    }
+}
+
+.twitter {
+    .fa-icon;
+    .fab;
+  
+    &:before {
+      content: @fa-var-twitter;
+    }
+  }
+.angular {
+    .fa-icon;
+    .fab;
+  
+    &:before {
+      content: @fa-var-angular;
+    }
+  }
+.discord {
+    .fa-icon;
+    .fab;
+  
+    &:before {
+      content: @fa-var-discord;
+    }
+  }
+.biohazard {
+    .fa-icon;
+    .fab;
+  
+    &:before {
+      content: @fa-var-biohazard;
+    }
+  }
+  i {
+      padding: 0.2rem;
+
+      .big-icon {
+          height: 30px;
+      }
+  }
+
+// -------- ICONS --------
+
 
 .rainbow {
-
+    position: relative;
     background: -webkit-linear-gradient(0, 
     rgb(255, 0, 0), 
     rgb(255, 123, 0),
