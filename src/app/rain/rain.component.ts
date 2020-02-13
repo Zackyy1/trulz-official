@@ -31,7 +31,7 @@ export class RainComponent implements OnInit {
     p.setup = () => {
       p.createCanvas(p.windowWidth, p.windowHeight).parent('rain-canvas');
 
-      for (var i = 0; i < 500; i++) {
+      for (var i = 0; i < 100; i++) {
         drops[i] = new Drop(p);
       }
     };
