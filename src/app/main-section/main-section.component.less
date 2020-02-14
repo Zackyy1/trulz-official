@@ -26,7 +26,9 @@ section.main-section {
         }
     
         .trulz-text {
-            margin: 0;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0;
             padding-top: -3rem;
             font-family: 'Righteous';
             font-style: normal;
@@ -34,13 +36,24 @@ section.main-section {
             font-size: 123px;
             // line-height: 153px;
             text-align: center;
-            
-            text-shadow: 0px 0px 64px @lime;
             transform: rotate(-4.59deg);
-            background: -webkit-linear-gradient(rgb(255, 196, 0), @lime);
+            transition: 0.2s;
             
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+
+            &.trulz-glow {
+                text-shadow: 0px 0px 64px @lime;
+                background: -webkit-linear-gradient(rgb(255, 196, 0), @lime);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: 0.2s;
+
+            }
+
+            &.trulz-zoom {
+                .rainbow();
+                transition: 0.2s;
+
+            }
         
         }
 
