@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import * as p5 from "p5";
 import { Drop } from "./Drop.js";
+import * as $ from 'jquery'
+
 @Component({
   selector: "app-rain",
   templateUrl: "./rain.component.html",
@@ -9,11 +11,14 @@ import { Drop } from "./Drop.js";
 export class RainComponent implements OnInit {
   private p5;
   constructor() {
-    window.onresize = this.onWindowResize;
+    
   }
 
   ngOnInit() {
     this.createCanvas();
+    $('window').resize(e => {
+      this.onWindowResize
+    })
   }
 
   private onWindowResize = (e) => {
@@ -36,6 +41,7 @@ export class RainComponent implements OnInit {
       }
     };
     p.draw = () => {
+      
       p.background(31, 31, 31);
       for (var i = 0; i < drops.length; i++) {
         drops[i].fall();
