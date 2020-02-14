@@ -18,6 +18,7 @@ Inside project root, type
 git fetch
 git checkout BRANCH_NAME
 git pull
+npm i
 ```
 
 
