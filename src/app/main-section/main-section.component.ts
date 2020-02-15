@@ -11,7 +11,6 @@ export class MainSectionComponent implements OnInit {
 
   ngOnInit() {
     $('.trulz-text').hover(e=>{
-      console.log(e)
       if (e.type == 'mouseenter') {
         $(e.target).addClass('trulz-zoom')
         $(e.target).removeClass('trulz-glow')
