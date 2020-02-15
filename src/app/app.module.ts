@@ -11,6 +11,9 @@ import { RainComponent } from './rain/rain.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { StaffComponent } from './staff/staff.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FooterComponent } from './footer/footer.component';
     RainComponent,
     NavBarComponent,
     MainSectionComponent,
-    FooterComponent
+    FooterComponent,
+    StaffComponent,
+    GalleryComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
