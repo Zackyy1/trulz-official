@@ -1,3 +1,12 @@
-<p>
-  staff works!
-</p>
+<div class="staff">
+
+  <div class="card" *ngFor="let member of mandem">
+    <div class="image" ></div>
+    <h2 class="card-name">{{member.name}}</h2>
+    <h5 class="card-title">{{member.title}}</h5>
+    <h4 class="card-body">{{member.desc}}</h4>
+  </div>
+
+
+</div>
+
